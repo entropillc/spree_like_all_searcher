@@ -21,8 +21,6 @@ Add the following to your Gemfile
 
   gem 'spree_like_all_searcher', :git => 'git@github.com:entropillc/spree_like_all_searcher.git'
   
-Set the default searcher in an initializer. I've set mine in config/initializers/spree.rb
-
-  Spree::Config.searcher_class = SpreeLikeAllSearcher::Base
+Run bundle install, and you should be golden
 
   
