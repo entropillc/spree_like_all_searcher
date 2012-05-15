@@ -2,7 +2,7 @@ module SpreeLikeAllSearcher
   class Engine < Rails::Engine
     engine_name 'spree_like_all_searcher'
     
-    initializer "spree.solr_search.preferences", :after => "spree.environment" do |app|
+    initializer "spree.spree_like_all_searcher.preferences", :after => "spree.environment" do |app|
       Spree::Config.searcher_class = SpreeLikeAllSearcher::Base
     end
     
